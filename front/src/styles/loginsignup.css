@@ -1,0 +1,61 @@
+.login,
+.signup,
+.loginform,
+.signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login,
+.signup {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  z-index: 0;
+}
+
+.loginform,
+.signupform {
+  background-color: white;
+  border: 1px solid #1a1a1a;
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+.loginformtitle,
+.signupformtitle {
+  color: #1a1a1a;
+}
+
+.loginformform,
+.signupformform {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 20px;
+}
+
+.textinputfield {
+  background-color: white;
+}
+
+.tosignup {
+  text-decoration: none;
+}
+
+.loginsubmit {
+  height: 50px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.loginsubmit a {
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,49 @@
+.caterpillar {
+  display: flex;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.ballCrawl {
+  animation: crawl 1s ease infinite;
+}
+
+.ball:nth-of-type(1) {
+  background-color: #ee6352;
+  animation-delay: 0s;
+}
+.ball:nth-of-type(2) {
+  background-color: #fac05e;
+  animation-delay: 0.2s;
+}
+.ball:nth-of-type(3) {
+  background-color: #59cd90;
+  animation-delay: 0.4s;
+}
+.ball:nth-of-type(4) {
+  background-color: #3fa7d6;
+  animation-delay: 0.6s;
+}
+.ball:nth-of-type(5) {
+  background-color: #ff9cdf;
+  animation-delay: 0.8s;
+}
+
+@keyframes crawl {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(-0px);
+  }
+}

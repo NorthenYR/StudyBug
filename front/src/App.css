@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
+
+* {
+  font-family: "Arimo", sans-serif;
+}
+
+.App,
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 100%;
+  grid-template-areas: "navbar" "mainPage";
+}
+
+.mainPage {
+  grid-area: mainPage;
+}
+
+.navbar {
+  grid-area: navbar;
+}

@@ -1,0 +1,119 @@
+.courseForm {
+  background-color: white;
+  border: 1px solid black;
+  margin: 100px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#courseForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phase1,
+.phase2 {
+  width: 100%;
+}
+
+.taskFormContainer {
+  margin: 0px !important;
+}
+.rowInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.rowInput .courseFormInput,
+.rowInput .taskFormInput {
+  margin: 0px 20px;
+}
+
+#courseNameInput {
+  margin: 0px 20px;
+}
+
+.courseFormTitle {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.closeCourseForm {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nextBackButtons {
+  margin: 10px 0px;
+}
+
+.studyBugButton {
+  color: white;
+  background-color: #1a1a1a;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 0px;
+  margin: 10px 20px;
+  border-radius: 50px;
+}
+
+
+.miniTask {
+  margin: 0px 20px;
+  width: 97%;
+  border-radius: 50px;
+  height: 40px;
+  color: #1a1a1a;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.miniTaskItem {
+  margin: 0px 10px;
+}
+
+input[name="code"] {
+  text-transform: uppercase;
+}
+
+.redDelete,
+.deleteButton {
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: red;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.css-79ws1d-MuiModal-root {
+  overflow: scroll !important;
+}

@@ -1,0 +1,181 @@
+.taskList {
+  padding-top: 50px;
+  width: auto;
+}
+
+.task {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskTop,
+.taskTop,
+.taskBottom,
+.taskBottomLeft,
+.taskBottomMiddle,
+.taskBottomRight {
+  width: 100%;
+}
+
+.taskTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.taskTopLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.taskTopRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.completeTask {
+  border: 1px solid #1a1a1a;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskBottom {
+  display: flex;
+  flex-direction: row;
+  gap: 0%;
+  width: 100%;
+  justify-content: center;
+  height: 48%;
+}
+
+.taskBottomLeft {
+  display: grid;
+  /* width: 33%; */
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* horiz divider in task bottom*/
+.taskBottomLeft::before {
+  position: absolute;
+  content: " ";
+  width: 90%;
+  margin-top: 50px;
+  height: 1px;
+  z-index: 5;
+  background-color: #1a1a1a;
+}
+
+/* vert divider in task bottom*/
+.taskBottomLeft::after {
+  position: absolute;
+  content: " ";
+  width: 1px;
+  height: 100%;
+  z-index: 5;
+  margin-left: 45%;
+  background-color: #1a1a1a;
+}
+
+.taskBottomRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.taskTitle {
+  font-size: 40px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
+  background-color: #1a1a1a;
+}
+
+.deleteTaskButton {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relDocs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.relDocsList {
+  display: flex;
+  gap: 10px;
+}
+
+.relDoc {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #1a1a1a;
+}
+
+.editTask {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskStat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.taskIcon {
+  font-size: 30px;
+}
+
+.taskStat > span {
+  /* width: 70px; */
+  text-align: right;
+}
+
+.todoLoggedOut {
+  width: 100%;
+  height: 100%;
+}
+
+.todoLoggedIn {
+  position: relative;
+}
+
+.filterDrawer {
+  border-right: 1px solid #1a1a1a;
+}
+
+.rightOfDrawerClosed {
+  transition: all 0.3s ease-out;
+  transform: translateX(0);
+  width: calc(100% - 0px);
+}
+
+.rightOfDrawerOpen {
+  transform: translateX(300px);
+  width: calc(100% - 300px);
+  position: relative;
+}

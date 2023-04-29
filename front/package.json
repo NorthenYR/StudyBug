@@ -1,0 +1,70 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3002",
+  "dependencies": {
+    "@date-io/date-fns": "^2.16.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.7",
+    "@mui/x-data-grid": "^5.17.21",
+    "@mui/x-date-pickers": "^5.0.17",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "dayjs": "^1.11.7",
+    "mui-color-input": "^1.0.4",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.6.9",
+    "react-bootstrap": "^2.7.0",
+    "react-calendar": "^4.0.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.42.1",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.7.0",
+    "reactjs-popup": "^2.0.5",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@types/react-big-calendar": "^0.38.4",
+    "@types/react-calendar": "^3.9.0"
+  }
+}

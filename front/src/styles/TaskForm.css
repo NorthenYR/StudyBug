@@ -1,0 +1,139 @@
+#taskForm {
+  background-color: white;
+  border: 1px solid black;
+  margin: 100px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.courseForm #taskForm {
+  /* background-color: pink; */
+  margin: 10px;
+}
+
+.tagsTitle {
+  width: 100%;
+  font-size: 20px;
+}
+
+.userTags {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  min-height: 300px;
+  margin: 20px;
+  margin-top: 0px;
+  position: relative;
+}
+
+/* TODO: come back here... fix edit task tags scrolling */
+.allUserTags {
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 30px;
+  font-weight: 900;
+  flex-wrap: wrap;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+
+.allUserTags > * {
+  /* background-color: pink; */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.userTagsInput {
+  display: flex;
+  align-items: center;
+}
+
+.appliedTag {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 0px 5px;
+}
+
+#tagsApplied {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#tagsApplied :first-child {
+  margin-left: 20px;
+}
+
+.addNewUserTagButton {
+  background-color: #1a1a1a;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.addNewUserTagButton > * {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.modifyUserTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.modifyUserTag span {
+  font-size: 13px;
+  padding: 0px 10px;
+  background-color: #1a1a1a;
+  /* height: 30px; */
+  color: white;
+  display: flex;
+  margin: 0px 5px;
+  justify-content: center;
+  border-radius: 5px;
+
+  align-items: center;
+}
+
+.deleteUserTag,
+.editUserTag {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* border: 1px solid #1a1a1a; */
+}
+
+.deleteUserTag {
+  background-color: red;
+}
+
+.editUserTag {
+  background-color: cornflowerblue;
+}

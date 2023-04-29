@@ -1,0 +1,157 @@
+.todoNav {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 10px;
+  padding-top: 10px;
+  position: fixed;
+
+  z-index: 8;
+  background-color: white;
+}
+
+/* TODO: uh is this all actually doing something? */
+.todoNav > div {
+  height: 100%;
+  display: flex;
+}
+
+.todoNav > div > button,
+.todoNav > button {
+  height: 30px;
+  padding: 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 50px;
+}
+
+.todoNav > button {
+  width: 30px;
+  margin-right: 10px;
+}
+
+
+.todoNav button {
+  margin-left: 10px;
+}
+
+.drawerHeader {
+  height: 50px;
+  box-sizing: border-box;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+  width: 280px;
+  padding-top: 10px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+.drawerHeader::after {
+  content: " ";
+  width: calc(100% + 20px);
+  margin: 4px 0px 10px -10px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.drawerHeaderTitles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawerHeaderTitles :nth-of-type(2) {
+  font-size: 15px;
+}
+
+
+.controlDrawer {
+  background-color: #1a1a1a;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterTitle {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.filterTitleBig {
+  font-size: 25px;
+  color: #1a1a1a;
+  /* margin-bottom: 20px; */
+}
+
+.tagsFilter {
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filterTagSelected,
+.filterTagUnSelected, .clearAll {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 10px;
+  border: 1px solid #1a1a1a;
+}
+
+.filterTagSelected {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.filterTagUnSelected {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterSection label {
+  margin-left: 10px;
+}
+
+.clearAll {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.sortSelect {
+  margin: 10px 0px 20px 0px;
+}
