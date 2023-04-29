@@ -1,22 +1,25 @@
-# 📚🐛StudyBug Academic Planner
 
-> 🔗GitLab Repository: [Files · master · Camisha Mortensen / StudyBug · GitLab (mcmaster.ca)](https://gitlab.cas.mcmaster.ca/mortensc/studybug/-/tree/master) 
+
+<img src="./img/StudyBug-Logo.png" alt="StudyBug-Logo" style="zoom: 10%; float: left"/>
+
+# StudyBug Academic Planner
+
+> 🔗GitLab Repository: [NorthenYR/StudyBug (github.com)](https://github.com/NorthenYR/StudyBug)
 >
-> - Please make sure you are at [<img src="img/1.png" height="35px" />](https://gitlab.cas.mcmaster.ca/mortensc/studybug/-/tree/master) branch.
-
-[[_TOC_]]
-
-
 
 ## 💡Overview
 
-**StudyBug Academic Planner** is a web application intended to allow university students to plan their semesters, academic years or even overall degree. It offers features for users to input details about each of their courses, assignments, tests and deadlines and calculate grades. Users will be able to view their courses and goals in an overall dashboard view as well as a calendar view by month, week, day, etc. and check them off a to-do list, tracking their grades and progress as they go. Additionally, students will be able to generate a weekly study plan based on their schedule and assignment priority/difficulty. The strategy for this product is to combine and expand upon the best features of the similar calendar, to-do list, time management and academic planning applications in one place and for students to be able to use the application throughout their entire academic career. The web application is developed using the **MERN** Stack which includes **M**ongoDB, **E**xpress, **R**eact and **N**ode.
+**StudyBug Academic Planner** is a web application that helps university students to schedule their academic tasks and plan their semesters, academic years or overall degree.
+
+It offers features for users to input details about each of their courses, assignments, tests and deadlines and calculate grades. Users will be able to view their courses and goals in an overall dashboard view as well as a calendar view by month, week, day, etc. and check them off a to-do list, tracking their grades and progress as they go. Additionally, students will be able to generate a weekly study plan based on their schedule and assignment priority/difficulty. The strategy for this product is to combine and expand upon the best features of the similar calendar, to-do list, time management and academic planning applications in one place and for students to be able to use the application throughout their entire academic career. The web application is developed using the **MERN** Stack which includes **M**ongoDB, **E**xpress, **R**eact and **N**ode.
 
 ### Concept
 
 The concept of StudyBug Academic Planner originates from a set of time management strategies employed by one of the development team members for several years throughout his undergraduate career. There are indeed many time management applicants in the market including calendar planners, timetable planners, to-do list organizers, habit development monitors, progress monitors, count-down timers, etc.; however, at that time, and even until today, there is not a single application that integrates all useful time management features of these applications into one individual system. And those applications also lack designated features that are necessary for the group of university students. As an undergraduate student who experiences the intense tempo of academic life, he knows what is best for students and he decided to design a conceptual academic planner from scratch on paper.
 
-<img src="img/2.jpg" alt="2" width="45%" /><img src="img/3.png" alt="3" width="45%" />
+<img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" width="38%" />
+
+<img src="./img/laptop.png" alt="laptop" width="50%"/>
 
 StudyBug Academic Planner is a capstone project and is supervised by McMaster University, Faculty of Engineering, Computer Science Program (Year of 2022/2023). Development team members are able to learn approaches to perform the entire software development process and understand the software life cycle in practice. Development team members will also demonstrate their understanding of the computing and software industry, their proficiency in technical knowledge and their skills in programming. The software strategy is using the MERN Stack to implement a web application that runs on modern web browsers, which is cross-platform and cross-device.
 
@@ -38,7 +41,6 @@ The core feature of StudyBug Academic Planner is providing a planner that allows
 
 StudyBug Academic Planner also provides a rich set of course-management and time-management features, including:
 
-- The application will generate a suggested weekly study plan in order to help students decide what they should study, when and for how long based on their schedule and assignment priority/difficulty. This can be automatically added to the calendar and to-do list.
 - Users will also be able to access the degree planning section from the Dashboard where they can track and view the progress of their entire degree
 
 ### Why StudyBug?
@@ -58,7 +60,7 @@ The application is a new and self-contained academic planner that helps students
 
 ### Requirement
 
-[<img src="img/4.svg" style="background-color:black" />](https://nodejs.org/en/)
+[<img src="img/4.svg" style="background-color: black;" width="15%" />](https://nodejs.org/en/)
 
 StudyBug Academic Planner web application is programmed in TypeScript programming language, which is a JavaScript variation. In order to run the web application, the JavaScript runtime environment, namely Node.js, is necessary.
 
@@ -74,7 +76,7 @@ node --version
 
 and you should be able to see the version of Node.js like:
 
-<img src="img/5.png" alt="5"  />
+![5](./img/5.png)
 
 <a name="npm">[<img src="img/6.png" alt="6" width="10%"/>](https://commons.wikimedia.org/wiki/File:Npm-logo.svg)</a>
 
@@ -698,17 +700,13 @@ We will perform the testing stage using the user test.
 
 - [x] Primarily implemented the APIs for realizing the core functionalities of the web application.
 - [x] Primarily implemented the GUI for presenting the web page layout of the application.
-- [ ] Optimizing the complete implimentation of the application’s functionalities.
+- [x] Optimizing the complete implimentation of the application’s functionalities.
 - [ ] Refining the GUI’s reactive effects and interactive effects.
 - [ ] Improving the software quality.
 
 ### Roadmap
 
 StudyBug Academic Planner is a capstone project and is supervised under McMaster University, Faculty of Engineering, Computer Science Program (Year of 2022/2023).
-
-| Development Stage | Description                 | Schedule |
-| ----------------- | :-------------------------- | -------- |
-| Stage 8           | Faculty of Engineering Expo | Apr. 11  |
 
 Potential future features:
 
