@@ -1,6 +1,6 @@
 
 
-<img src="./img/StudyBug-Logo.png" alt="StudyBug-Logo" style="width: 16%; float: left"/>
+<img src="./img/StudyBug-Logo.png" alt="StudyBug-Logo" width="16%" style="float:left"/>
 
 # StudyBug Academic Planner
 
@@ -18,7 +18,7 @@ It offers features for users to input details about each of their courses, assig
 The concept of StudyBug Academic Planner originates from a set of time management strategies employed by one of the development team members for several years throughout his undergraduate career. There are indeed many time management applicants in the market including calendar planners, timetable planners, to-do list organizers, habit development monitors, progress monitors, count-down timers, etc.; however, at that time, and even until today, there is not a single application that integrates all useful time management features of these applications into one individual system. And those applications also lack designated features that are necessary for the group of university students. As an undergraduate student who experiences the intense tempo of academic life, he knows what is best for students and he decided to design a conceptual academic planner from scratch on paper.
 
 <p align="center">
-  <img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" style="width:38%"/>
+  <img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" width="38%"/>
 </p>
 <p align="center">
   <img src="./img/laptop.png" alt="laptop" width="50%"/>
