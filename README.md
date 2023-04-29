@@ -119,7 +119,7 @@ npm install
 
 ​				You should see the below progress bar which means node modules are being installed.
 
-<img src="img/8.png" width=”67%" />
+<img src="img/8.png" alt="8" />
 
 ​				Then execute the below command to start a server session:
 
