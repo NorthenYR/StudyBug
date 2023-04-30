@@ -5,9 +5,12 @@
 # StudyBug Academic Planner
 
 > 🔗GitLab Repository: [NorthenYR/StudyBug (github.com)](https://github.com/NorthenYR/StudyBug)
->
 
-## 💡Overview
+
+[TOC]
+
+
+## 1️⃣ Description
 
 **StudyBug Academic Planner** is a web application that helps university students to schedule their academic tasks and plan their semesters, academic years or overall degree.
 
@@ -18,11 +21,12 @@ It offers features for users to input details about each of their courses, assig
 The concept of StudyBug Academic Planner originates from a set of time management strategies employed by one of the development team members for several years throughout his undergraduate career. There are indeed many time management applicants in the market including calendar planners, timetable planners, to-do list organizers, habit development monitors, progress monitors, count-down timers, etc.; however, at that time, and even until today, there is not a single application that integrates all useful time management features of these applications into one individual system. And those applications also lack designated features that are necessary for the group of university students. As an undergraduate student who experiences the intense tempo of academic life, he knows what is best for students and he decided to design a conceptual academic planner from scratch on paper.
 
 <p align="center">
-  <img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" width="38%"/>
+  <img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" width="50%"/>
 </p>
 <p align="center">
-  <img src="./img/laptop.png" alt="laptop" width="50%"/>
+  <img src="./img/laptop.png" alt="laptop" width="66%"/>
 </p>
+
 
 StudyBug Academic Planner is a capstone project and is supervised by McMaster University, Faculty of Engineering, Computer Science Program (Year of 2022/2023). Development team members are able to learn approaches to perform the entire software development process and understand the software life cycle in practice. Development team members will also demonstrate their understanding of the computing and software industry, their proficiency in technical knowledge and their skills in programming. The software strategy is using the MERN Stack to implement a web application that runs on modern web browsers, which is cross-platform and cross-device.
 
@@ -42,10 +46,6 @@ The core feature of StudyBug Academic Planner is providing a planner that allows
 - Users will be able to add non-academic tasks to the calendar and to-do list
 - Tasks on the calendar and to-do list will be taggable and filterable
 
-StudyBug Academic Planner also provides a rich set of course-management and time-management features, including:
-
-- Users will also be able to access the degree planning section from the Dashboard where they can track and view the progress of their entire degree
-
 ### Why StudyBug?
 
 StudyBug Academic Planner is a software intended to help university students better manage their schedules and plan their degrees. Correctly and effectively using this software will significantly help university students do better in time management, schedule organization and self-discipline and present a better academic performance. Potential users including but not limited to university faculty administrative staff, instructors, teaching assistants, students’ parents and university non-faculty staff are also able to benefit from this software in their daily planning.
@@ -54,14 +54,16 @@ The application is a new and self-contained academic planner that helps students
 
 
 
-## 🚀Installation
+## 2️⃣ User Instructions
+
+### 🚀Installation
 
 > - If you have already had Node.js and npm installed on your computer but this is your first time executing StudyBug, click [here](#First Time Execution) to skip **Requirement** section.
 >
 > - For first-time executing StudyBug, see **[First-Time Execution](#First-Time Execution)** section.
 > - If this is not your first time executing StudyBug, see **[Regular Execution](#Regular Execution)** section.
 
-### Requirement
+#### Requirement
 
 [<img src="img/4.svg" style="background-color: black;" width="15%" />](https://nodejs.org/en/)
 
@@ -103,7 +105,7 @@ and you should be able to see the version of Node.js like:
 
 For more information about npm, please see [Downloading and installing Node.js and npm | npm Docs (npmjs.com)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-### First-Time Execution
+#### First-Time Execution
 
 **Step 1** - In the terminal, run the below command  to clone the remote repository to your local machine:
 
@@ -146,7 +148,7 @@ When first-time execute, your computer may ask you to choose a default browser t
 
 <img src="img/11.png" alt="11"  />
 
-#### Potential Error
+##### Potential Error
 
 After executing `npm start`, you might encounter the error message such as:
 
@@ -154,7 +156,7 @@ After executing `npm start`, you might encounter the error message such as:
 
 The solution is deleting the folder `node_modules` from your current directory(`backend` or `front`), then running `npm install` again in your current directory to re-install the node modules.
 
-### Regular Execution
+#### Regular Execution
 
 Open a terminal window, in directory `/studybug/backend` run:
 
@@ -170,53 +172,64 @@ npm start
 
 
 
-## 🧭Usage
+### 🧭Usage
 
-### Sign Up, Log In & Log Out
+#### Sign Up, Log In & Log Out
 
-<img src="img/signup.png" alt="signup" width=45% /><img src="img/settings.png" alt="signup" width=45% /> 
+<img src="./img/screenshot 2023-04-30 13.33.05.png" alt="screenshot 2023-04-30 13.33.05" width=45% /><img src="./img/screenshot 2023-04-30 13.26.00.png" alt="screenshot 2023-04-30 13.26.00" width=45% /> 
 
-You can create a username and a password, and use your email to sign up for your account.
-Then you can log in to the system using the username and password.
-On every page of the system, there is a navigation bar on the top of the UI; clicking on the avatar with your name initial in the top-right corner, a setting menu would pop up. You can log out from there.
+- The first step is creating your account; create a username and a password, and use your email to sign up.
+- Then you can log in to the system using the username and password.
+- On every page of the system, there is a navigation bar on the top of the UI; clicking on the avatar with your name initial in the top-right corner, a setting menu would pop up. You can log out from there.
 
-### Course Page
+#### Course Page
 
-<img src="img/addcourse.png" alt="addcourse" width=45% /><img src="img/coursepage.png" alt="coursepage" width=45%/>
+<img src="img/addcourse.png" alt="addcourse" width=45% /><img src="./img/course page.png" alt="course page" width="45%" />
 
-You can add courses on the course page; you can add course code, course name, and professor’s and TA’s contact information to a course. 
-The system would ask you to allocate a colour for a course; you can pick a colour palette or input the HEX colour code of your favourite colour.
-The added courses with their allocated colour will show on the course page. You can click the red cross button to delete a course.
+- You can add courses on the course page; you can add course code, course name, and professor’s and TA’s contact information to a course. 
+- The system would ask you to allocate a colour for a course; you can pick a colour palette or input the HEX colour code of your favourite colour.
+- The added courses with their allocated colour will show on the course page. You can click on the red delete button to delete a course.
 
-### Study Task
+#### Study Task & Todo List
 
-<img src="img/add task.png" alt="add task" width=45%/><img src="img/to-do list.png" alt="to-do list" width=45% />
+<img src="./img/image-20230430125949394.png" alt="image-20230430125949394" width=45%/><img src="./img/image-20230430130056205.png" alt="image-20230430130056205" width=45% />
 
-Once you have added courses. You can add study tasks to each course.
-You can input the task title, deadline, variety(e.g. assignment), weight and priority of each study task.
-Each ongoing task would now only show after the course it belongs to with brief information, but also would display in a to-do list with its details.
+<img src="./img/image-20230430133401538.png" alt="image-20230430133401538" width=45% /><img src="./img/screenshot 2023-04-30 13.27.07.png" alt="screenshot 2023-04-30 13.27.07" width=45% />
 
-### Schedule
+- Once you have added courses. You can add study tasks to each course.
+- You can input the task title, deadline, variety(e.g. assignment), weight and priority of each study task.
+- Each ongoing task would now only show after the course it belongs to with brief information, but also would display in the Todo List with its details.
+- On the Todo List page, you can click the check boxes to check off tasks, click pen button to edit tasks details or click delete button to delete tasks. 
+- You can of course create an non-course task which is not related to any course; simply click on `+` button on the top-right corner to put the information and the non-course task would display in light grey color.
+- On the top-left corner therer are three buttons: `>`, `close all` and `open all`.
+- Clicking on `open all` would expand all tasks to show the details whereas clicking on `close all` would hide al details and show a nice and minimalistic page. 
+- Clicking on `>` button would provide you the sidebar tool that allows you to sort tasks by deadline, priority, weight or course, and to filter specific tasks by class, variety, priority or completion.
 
-<img src="img/calendar-6126214.png" alt="calendar" width=45% /><img src="img/timetable-6126214.png" alt="timetable" width=45% />
+#### Schedule & Views
 
-<img src="img/timeline-6126214.png" alt="timeline" width=45% /><img src="img/agenda.png" alt="agenda" width=45%/>
+<img src="./img/screenshot 2023-04-30 13.44.55.png" alt="screenshot 2023-04-30 13.44.55" width=45% /><img src="./img/screenshot 2023-04-30 13.45.23.png" alt="screenshot 2023-04-30 13.45.23" width=45% />
 
-The study tasks would also show on the calendar. You can view your schedule in the monthly calendar view, weekly timetable view and daily timeline view. You can use the button at the top-left corner to navigate history or future schedule, and a click on “Today” will bring you back.
-You can also add tasks to the schedule, simply click on a time slot and a window would pop up to collect the information.
-You can also use the filter on the left sidebar.
+<img src="./img/screenshot 2023-04-30 13.45.06.png" alt="screenshot 2023-04-30 13.45.06" width=45% /><img src="./img/screenshot 2023-04-30 13.26.08.png" alt="screenshot 2023-04-30 13.26.08" width=45% />
 
-### Dashboard
+- All study tasks would also show on the calendar. 
+- You can view your schedule in monthly calendar view, weekly timetable view, daily timeline view and agenda view. 
+- You can use the button at the top-left corner to navigate history or future schedule, and a click on `Today` will bring you back.
 
-<img src="img/dashboard-6126496.png" alt="dashboard"/>
+#### Dashboard 
 
-There is a dashboard with comprehensive information including the current weekly schedule, ongoing courses with in-progress grades, the nearest due tasks, etc. You can have a big picture of your current semester by this dashboard.
+![dashboard](./img/dashboard-2873569.png)
+
+- There is a dashboard with comprehensive information including the current weekly schedule, ongoing courses with in-progress grades, the nearest due tasks, etc.
+- Schedules in “This Week” timetable tell you what to focus for the current week. 
+- You can have a big picture of your current semester by this dashboard.
 
 
 
-## ⚙️Implementation Details
+## 3️⃣ Implementation Notes
 
-### Arichitechture
+### ⚙️Implementation Details
+
+#### Arichitechture
 
 **Activity Diagram:**
 
@@ -252,11 +265,11 @@ React.js a a JavaScript library that provides abundant set of features for build
 
 Node.js is an open-source, cross-platform JavaScript runtime environment for building network applications.
 
-#### [TypeScript](https://www.typescriptlang.org/)
+##### [TypeScript](https://www.typescriptlang.org/)
 
 StudyBug is programmed using TypeScript language. TypeScript is a variation of JavaScript with syntax for types. Since it is strongly typed, it is much more easier to catch errors during editing and to build more reliable applications.
 
-### Dependencies
+#### Dependencies
 
 [ts-node](https://typestrong.org/ts-node/docs/)
 
@@ -304,13 +317,13 @@ React Modules
 
 
 
-## 💻Programmatic(API) Description
+### 💻Programmatic Description
 
 The system is built upon modules revolving around the user’s academic planner. As such, the relevant data are stored in a user’s “profile”. At the highest level, we have the user and all sub-modules will interact directly with the user’s profile. Higher level subsystems include a user sign-in module, which are responsible for user registration, login, and other related features such as password resets, as well as an academic overview module. Submodules of this include a calendar and ToDo module, which may contain information about courses and tasks. These modules are interacting with each other. Users are able to input their courses and tasks which will be saved to their profile, and these can also be added to their profile’s calendar and ToDo list. These modules provide all the functions required for the product.
 
 <img src="img/image-20230211112501539.png" alt="image-20230211112501539" width=45%/>
 
-### Backend
+#### Backend
 
 [app.ts](backend/src/app.ts)
 
@@ -320,7 +333,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module that connects to MongoDB database and sets up the server for the backend of the web application.
 
-### Frontend
+#### Frontend
 
 [App.tsx](front/src/App.tsx)
 
@@ -330,7 +343,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	The index web page where all React conponents will mount to once the web application starts.
 
-### Controllers
+#### Controllers
 
 [courses.ts](backend/src/controllers/courses.ts)
 
@@ -344,13 +357,13 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module of all handler functions for CRUD operations on users data.
 
-### Middleware
+#### Middleware
 
 [auth.ts](backend/src/middleware/auth.ts)
 
 ​	A middleware for user identify authentication.
 
-### Models
+#### Models
 
 [models.ts](backend/src/models/models.ts)
 
@@ -364,7 +377,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	The schema for MongoDB docuements(records) of user entities.
 
-### Routes
+#### Routes
 
 [courses.ts](backend/src/routes/courses.ts)
 
@@ -378,7 +391,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module for routing of endpoints(URIs) on the user authentication pages of the website.
 
-### Utility
+#### Utility
 
 [assertlsDefined.ts](backend/src/util/assertIsDefined.ts)
 
@@ -740,13 +753,17 @@ If you have any troubleshooting or feedback to any aspect of StudyBug Academic P
 
 ## 💐Acknowledgement
 
-[Department of Computing and Software, Faculty of Engineering, McMaster University](https://www.eng.mcmaster.ca/cas/)
+Thank [Department of Computing and Software, Faculty of Engineering, McMaster University](https://www.eng.mcmaster.ca/cas/)
 
-Professor Frantisek Franek, Instructor of the Course of Capstone Project
+Thank Professor Frantisek Franek, Instructor of the Course of Capstone Project
 
-Holly Koponen, Teaching Assistant of the Course of Capstone Project
+Thank Holly Koponen, Teaching Assistant of the Course of Capstone Project
 
-Akshay Kumar Arumugasamy, Teaching Assistant of the Course of Capstone Project
+Thank Akshay Kumar Arumugasamy, Teaching Assistant of the Course of Capstone Project
+
+Thank everybody who has ever helped us.
+
+Thank my parents for unconditional support.
 
 
 
