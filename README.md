@@ -4,7 +4,9 @@
 
 # StudyBug Academic Planner
 
-> 🔗GitLab Repository: [NorthenYR/StudyBug (github.com)](https://github.com/NorthenYR/StudyBug)
+> 🔗GitLab Repository: [Files · master · Camisha Mortensen / StudyBug · GitLab (mcmaster.ca)](https://gitlab.cas.mcmaster.ca/mortensc/studybug/-/tree/master) 
+>
+> - Please make sure you are at [<img src="./img/1.png" height="35px" />](https://gitlab.cas.mcmaster.ca/mortensc/studybug/-/tree/master) branch.
 
 
 [TOC]
@@ -20,12 +22,12 @@ It offers features for users to input details about each of their courses, assig
 
 The concept of StudyBug Academic Planner originates from a set of time management strategies employed by one of the development team members for several years throughout his undergraduate career. There are indeed many time management applicants in the market including calendar planners, timetable planners, to-do list organizers, habit development monitors, progress monitors, count-down timers, etc.; however, at that time, and even until today, there is not a single application that integrates all useful time management features of these applications into one individual system. And those applications also lack designated features that are necessary for the group of university students. As an undergraduate student who experiences the intense tempo of academic life, he knows what is best for students and he decided to design a conceptual academic planner from scratch on paper.
 
-<p align="center">
+<div align="center">
   <img src="./img/screenshot 2023-04-11 03.08.50.png" alt="screenshot 2023-04-11 03.08.50" width="50%"/>
-</p>
-<p align="center">
+</div>
+<div align="center">
   <img src="./img/laptop.png" alt="laptop" width="66%"/>
-</p>
+</div>
 
 
 StudyBug Academic Planner is a capstone project and is supervised by McMaster University, Faculty of Engineering, Computer Science Program (Year of 2022/2023). Development team members are able to learn approaches to perform the entire software development process and understand the software life cycle in practice. Development team members will also demonstrate their understanding of the computing and software industry, their proficiency in technical knowledge and their skills in programming. The software strategy is using the MERN Stack to implement a web application that runs on modern web browsers, which is cross-platform and cross-device.
@@ -39,7 +41,8 @@ The core feature of StudyBug Academic Planner is providing a planner that allows
 - Users will be able to add the details for each of their current courses including, lecture schedules, assignments, tests, and syllabus information.
 - Added assignments, labs, and tests will include weights, deadlines, and relevant links.
 - The application will generate corresponding tasks based on course information such as a lecture review task, a reading task, or a note-organizing task.
-- Students can return to the course homepages they create throughout the semester to record assessment marks, monitor in-progress grades and calculate the minimum mark requirements for outstanding assessments depending on their goals.
+- Students can record assessment marks and in-progress grades.
+- Students can track in-progress courses under the current semester on the dashboard page.
 - Course details and study tasks will be viewable on the Calendar
 - The same tasks will also be viewable on the to-do list in more detail where users can check them off
 - Each course will be clearly highlighted in a unique colour across the application
@@ -333,17 +336,8 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module that connects to MongoDB database and sets up the server for the backend of the web application.
 
-#### Frontend
 
-[App.tsx](front/src/App.tsx)
-
-​	A main function that sets up all React components of the frontend web UI.
-
-[index.tsx](front/src/index.tsx)
-
-​	The index web page where all React conponents will mount to once the web application starts.
-
-#### Controllers
+##### Controllers
 
 [courses.ts](backend/src/controllers/courses.ts)
 
@@ -357,13 +351,13 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module of all handler functions for CRUD operations on users data.
 
-#### Middleware
+##### Middleware
 
 [auth.ts](backend/src/middleware/auth.ts)
 
 ​	A middleware for user identify authentication.
 
-#### Models
+##### Models
 
 [models.ts](backend/src/models/models.ts)
 
@@ -377,7 +371,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	The schema for MongoDB docuements(records) of user entities.
 
-#### Routes
+##### Routes
 
 [courses.ts](backend/src/routes/courses.ts)
 
@@ -391,7 +385,7 @@ The system is built upon modules revolving around the user’s academic planner.
 
 ​	A module for routing of endpoints(URIs) on the user authentication pages of the website.
 
-#### Utility
+##### Utility
 
 [assertlsDefined.ts](backend/src/util/assertIsDefined.ts)
 
@@ -400,6 +394,96 @@ The system is built upon modules revolving around the user’s academic planner.
 [validateEnv.ts](backend/src/util/validateEnv.ts)
 
 ​	A utility module that validate the environment variable of the application.
+
+#### Frontend
+
+[App.tsx](front/src/App.tsx)
+
+​	A main function that sets up all React components of the frontend web UI.
+
+[index.tsx](front/src/index.tsx)
+
+​	The index web page where all React conponents will mount to once the web application starts.
+
+##### Assets
+
+A directory containing image assets as .svg files to be rendered within the application
+
+##### Components
+
+This directory contains all the components used by the pages in the application. This includes the animated caterpillar used in the header, the globally accessible navigation bar, user tags, and all other props used to fulfill the application's requirements. 
+
+##### Errors
+
+[httpsErrors.ts](front/src/errors/httpsErrors.ts)
+
+   A module extending Error that includes error handling for https requests
+
+##### Models
+
+[course.ts](front/src/models/course.tx)
+
+   A file containing interfaces for course related objects
+
+[user.ts](front/src/models/user.tx)
+
+   A file containing interfaces for user related objects
+
+##### Network
+
+[courses_api.ts](front/src/network/course_api.tx)
+
+   A file containing the api which calls requested course data from the backend 
+
+[tasks_api.ts](front/src/network/tasks_api.tx)
+
+   A file containing the api which calls requested task data from the backend 
+
+##### Pages
+
+[CalendarPage.tsx](front/src/Pages/CalendarPage.tsx)
+
+   This file acts as the main page for the calendar module.
+
+[CoursesPage.tsx](front/src/Pages/CoursesPage.tsx)
+
+   This file acts as the main page for the course module.
+
+[DashboardPage.tsx](front/src/Pages/DashboardPage.tsx)
+
+   This file acts as the main page for the dashboard module.
+
+[LandingPage.tsx](front/src/Pages/LandingPage.tsx)
+
+   This file acts as the default landing page
+
+[LoginPage.tsx](front/src/Pages/LoginPage.tsx)
+
+   This file acts as the page used for the login module.
+
+[NotFoundPage.tsx](front/src/Pages/NotFoundPage.tsx)
+
+   This file acts as the default page used when the user attemps to access an unrecognized URL
+
+[SignUpPage.tsx](front/src/Pages/SignUpPage.tsx)
+
+   This file acts as the page used for the signup module.
+
+[ToDoPage.tsx](front/src/Pages/ToDoPage.tsx)
+
+   This file acts as the page used for the ToDo module.
+
+##### Styles
+
+​    A directory containing css styling for various pages and components used within the application
+
+##### Utils
+
+[Utils.ts](front/src/utils/Utils.tx)
+
+A file containing utility functions utilized throughout the application
+
+
 
 ## 📊Testing
 

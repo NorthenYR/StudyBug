@@ -49,7 +49,7 @@ const ReactBigCalendarLoggedIn = () => {
   const [taskToEdit, setTaskToEdit] = useState<TaskModel | null>(null);
   const [open, setOpen] = useState<boolean>(false);
 
-  const [formatTasks, setFormatTasks] = useState<TaskModel[]>([]);
+ // const [formatTasks, setFormatTasks] = useState<TaskModel[]>([]);
 
   // to be clear, these boolean values dont really represent anything
   // toggling them will either expand or unexpand all task values
@@ -287,7 +287,7 @@ const ReactBigCalendarLoggedIn = () => {
       style: style
     };
   }
-
+/*
   const updateTasks = () => {
     const temp: React.SetStateAction<TaskModel[]> = []
     filteredTasks.forEach((task) => {
@@ -315,7 +315,7 @@ const ReactBigCalendarLoggedIn = () => {
     useEffect(() => {
       updateTasks();
     }, [tasks] )
-
+*/
   return (
 		<div className='todoLoggedIn'>
 			{/* to edit an existing task */}
@@ -381,7 +381,7 @@ const ReactBigCalendarLoggedIn = () => {
 								localizer={localizer}
 								defaultDate={new Date()}
 								defaultView='month'
-								events={formatTasks}
+								events={filteredTasks}
                 titleAccessor={'name'}
                 startAccessor={'start_date'}
                 endAccessor={'end_date'}
